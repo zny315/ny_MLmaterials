@@ -1,0 +1,177 @@
+{
+  "evaluator_version": "v18",
+  "selected_articles": 50,
+  "float_tolerance": 1e-12,
+  "metrics": [
+    {
+      "method": "Direct LLM",
+      "view": "entities",
+      "TP": 7824,
+      "FP": 1057,
+      "FN": 4720,
+      "precision": 0.8809818714108771,
+      "recall": 0.6237244897959183,
+      "F1": 0.7303617269544924
+    },
+    {
+      "method": "Direct LLM",
+      "view": "parts",
+      "TP": 2059,
+      "FP": 1253,
+      "FN": 2817,
+      "precision": 0.6216787439613527,
+      "recall": 0.4222723543888433,
+      "F1": 0.5029311187103078
+    },
+    {
+      "method": "Direct LLM",
+      "view": "performance",
+      "TP": 3302,
+      "FP": 467,
+      "FN": 256,
+      "precision": 0.8760944547625364,
+      "recall": 0.9280494659921305,
+      "F1": 0.9013238706155315
+    },
+    {
+      "method": "Direct LLM",
+      "view": "all",
+      "TP": 13185,
+      "FP": 2777,
+      "FN": 7793,
+      "precision": 0.8260243077308608,
+      "recall": 0.6285155877586043,
+      "F1": 0.7138603140227395
+    },
+    {
+      "method": "Expert Prompt Only",
+      "view": "entities",
+      "TP": 8816,
+      "FP": 1240,
+      "FN": 3728,
+      "precision": 0.8766905330151153,
+      "recall": 0.7028061224489796,
+      "F1": 0.7801769911504425
+    },
+    {
+      "method": "Expert Prompt Only",
+      "view": "parts",
+      "TP": 2475,
+      "FP": 1306,
+      "FN": 2401,
+      "precision": 0.6545887331393812,
+      "recall": 0.5075881870385562,
+      "F1": 0.5717916137229987
+    },
+    {
+      "method": "Expert Prompt Only",
+      "view": "performance",
+      "TP": 3333,
+      "FP": 325,
+      "FN": 225,
+      "precision": 0.9111536358665938,
+      "recall": 0.9367622259696459,
+      "F1": 0.923780487804878
+    },
+    {
+      "method": "Expert Prompt Only",
+      "view": "all",
+      "TP": 14624,
+      "FP": 2871,
+      "FN": 6354,
+      "precision": 0.8358959702772221,
+      "recall": 0.6971112594146248,
+      "F1": 0.7602214540067059
+    },
+    {
+      "method": "Task Decomposition Only",
+      "view": "entities",
+      "TP": 9383,
+      "FP": 1410,
+      "FN": 3161,
+      "precision": 0.8693597702214398,
+      "recall": 0.7480070153061225,
+      "F1": 0.8041307794489437
+    },
+    {
+      "method": "Task Decomposition Only",
+      "view": "parts",
+      "TP": 2599,
+      "FP": 2155,
+      "FN": 2277,
+      "precision": 0.5466975178796802,
+      "recall": 0.5330188679245284,
+      "F1": 0.5397715472481829
+    },
+    {
+      "method": "Task Decomposition Only",
+      "view": "performance",
+      "TP": 3319,
+      "FP": 230,
+      "FN": 239,
+      "precision": 0.9351930121160891,
+      "recall": 0.9328274311410905,
+      "F1": 0.9340087237934431
+    },
+    {
+      "method": "Task Decomposition Only",
+      "view": "all",
+      "TP": 15301,
+      "FP": 3795,
+      "FN": 5677,
+      "precision": 0.8012672811059908,
+      "recall": 0.7293831633139479,
+      "F1": 0.7636372710485602
+    },
+    {
+      "method": "Full Pipeline",
+      "view": "entities",
+      "TP": 11471,
+      "FP": 988,
+      "FN": 1073,
+      "precision": 0.9206998956577574,
+      "recall": 0.9144610969387755,
+      "F1": 0.9175698916130064
+    },
+    {
+      "method": "Full Pipeline",
+      "view": "parts",
+      "TP": 3719,
+      "FP": 1225,
+      "FN": 1157,
+      "precision": 0.7522249190938511,
+      "recall": 0.7627153404429861,
+      "F1": 0.7574338085539716
+    },
+    {
+      "method": "Full Pipeline",
+      "view": "performance",
+      "TP": 3449,
+      "FP": 165,
+      "FN": 109,
+      "precision": 0.954344216934145,
+      "recall": 0.9693648116919618,
+      "F1": 0.9617958728388176
+    },
+    {
+      "method": "Full Pipeline",
+      "view": "all",
+      "TP": 18639,
+      "FP": 2378,
+      "FN": 2339,
+      "precision": 0.886853499547985,
+      "recall": 0.8885022404423681,
+      "F1": 0.8876771044171924
+    }
+  ],
+  "full_pipeline_overall_improvements": {
+    "Direct LLM": 0.17381679039445286,
+    "Expert Prompt Only": 0.12745565041048645,
+    "Task Decomposition Only": 0.12403983336863222
+  },
+  "paper_rounded_overall_improvements": {
+    "Direct LLM": 0.174,
+    "Expert Prompt Only": 0.127,
+    "Task Decomposition Only": 0.124
+  }
+}

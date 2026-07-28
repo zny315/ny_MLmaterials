@@ -1,0 +1,48 @@
+{
+  "seed": 0,
+  "targets": {
+    "LOI_rel_increase": "reg",
+    "pHRR_rel_reduction": "reg",
+    "UL94_V0": "clf"
+  },
+  "split_scope": {
+    "scenario": "interp_random",
+    "axis": "N",
+    "strategy": "random",
+    "N": [3],
+    "trials": [0, 1]
+  },
+  "benchmark": {
+    "regression_methods": ["mean", "ridge", "gp", "rf", "histgb"],
+    "classification_methods": ["mean", "logistic", "gp", "rf", "histgb"],
+    "gp_literature_targets": ["LOI_rel_increase", "pHRR_rel_reduction", "UL94_V0"]
+  },
+  "selected_backbones": {
+    "LOI_rel_increase": {"lab": "ridge", "literature": "rf"},
+    "pHRR_rel_reduction": {"lab": "ridge", "literature": "rf"}
+  },
+  "estimators": {
+    "ridge_alpha": 10.0,
+    "logistic_C": 1.0,
+    "rf_trees": 40,
+    "lab_histgb_min_samples_leaf": 2,
+    "tabpfn_model_path": null
+  },
+  "pooling": {"learner": "histgb", "kappa": 3.0},
+  "positive_affine": {
+    "prior_mean": [0.0, 1.0, 0.0],
+    "prior_precision_diagonal": [0.25, 4.0, 4.0],
+    "inverse_gamma_shape": 2.0,
+    "inverse_gamma_scale": 1.0,
+    "sobol_power": 12,
+    "minimum_accepted_draws": 32,
+    "maximum_sobol_power": 16
+  },
+  "synthesis": {
+    "inverse_gamma_shape": 2.0,
+    "inverse_gamma_scale": 1.0,
+    "primary_quadrature_points": 64,
+    "audit_quadrature_points": 128,
+    "convergence_tolerance": 1e-10
+  }
+}

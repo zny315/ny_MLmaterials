@@ -1,0 +1,99 @@
+
+[ONE-SHOT THREE-VIEW OUTPUT JSON SCHEMA]
+Return valid JSON only. Use "#" for missing values.
+This output must be directly convertible to the three target database tables.
+Use the same sample_name and article_sample_order across the three arrays whenever they refer to the same material sample.
+
+{
+  "article_title": "paper title",
+  "DOI": "paper DOI",
+  "innovation": "#",
+  "ai_summary": "short paper-level summary",
+  "formulation_entities": [
+    {
+      "article_sample_order": 1,
+      "sample_name": "exact sample name",
+      "matrix": "...",
+      "matrix_system": "EVA, PE, EVA/PE, EVA/POE, EVA/PE/POE, other, or #",
+      "formulation_basis": "wt_total, wt_polymer_blend, phr_resin, parts_by_weight, unknown, or #",
+      "EVA_polymer_fraction": "...",
+      "PE_polymer_fraction": "...",
+      "POE_polymer_fraction": "...",
+      "EVA_VA_content": "...",
+      "PE_type": "...",
+      "POE_type": "...",
+      "key_content": "...",
+      "melt_index": "...",
+      "matrix_trname": "...",
+      "total_fr_loading": "...",
+      "mixing_method": "...",
+      "formulation_notes": "...",
+      "entity_id": "E1",
+      "entity_name": "...",
+      "entity_role": "matrix_polymer, main_flame_retardant, synergistic_flame_retardant, functional_filler, compatibilizer, crosslinking_agent, co_crosslinking_agent, processing_aid, other_additive, or #",
+      "entity_type": "pristine, surface_treated, grafted_additive, core_shell, microencapsulated, coated, intercalated, doped, in_situ_grown, hybrid_complex, matrix_grafted, blend_package, unknown, or #",
+      "entity_loading": "...",
+      "entity_loading_text": "...",
+      "entity_loading_unit": "wt%, phr, parts, or #",
+      "entity_loading_basis": "wt_total, wt_polymer_blend, phr_resin, parts_by_weight, unknown, or #",
+      "entity_loading_wt_total": "...",
+      "entity_loading_phr_resin": "...",
+      "entity_loading_conversion_note": "...",
+      "entity_material_type": "1, 0, or #",
+      "entity_trade_name": "...",
+      "entity_profile": "...",
+      "entity_smiles": "SMILES string for this entity, or #",
+      "entity_smiles_source": "text, name, figure, model, or #",
+      "entity_fig_locator": "#",
+      "entity_bbox": "#"
+    }
+  ],
+  "entity_parts": [
+    {
+      "article_sample_order": 1,
+      "sample_name": "exact sample name",
+      "entity_id": "E2",
+      "entity_name": "final modified/coated/grafted entity name",
+      "part_name": "subcomponent name",
+      "part_role": "base/core/shell/coating_layer/grafted_moiety/grafted_backbone/dopant/intercalated_guest/surface_ligand/coupling_agent/complexing_agent/synergistic_part/modifier/unknown, or #",
+      "relation_to_entity": "part_of, core_of, shell_of, grafted_to, grafted_from, coated_on, encapsulates, doped_into, intercalated_into, complexed_with, treated_surface_of, unknown, or #",
+      "modification_method": "none, surface_treatment, grafting, coating, encapsulation, microencapsulation, intercalation, doping, in_situ_growth, coordination_complex, physical_adsorption, unknown, or #",
+      "part_ratio": "...",
+      "part_loading": "...",
+      "part_loading_unit": "...",
+      "part_fig_locator": "#",
+      "part_bbox": "#",
+      "part_smiles": "#",
+      "part_smiles_source": "#",
+      "part_notes": "..."
+    }
+  ],
+  "performance_samples": [
+    {
+      "article_sample_order": 1,
+      "sample_name": "exact sample name",
+      "LOI": "...",
+      "UL94_rating": "V-0=0, V-1=1, V-2=2, NR/HB/no rating=3, or #",
+      "elongation_at_break": "...",
+      "tensile_strength": "...",
+      "T1": "...",
+      "T5": "...",
+      "T10": "...",
+      "T50": "...",
+      "Tmax1": "...",
+      "Tmax2": "...",
+      "TGAresidue": "...",
+      "TTI": "...",
+      "cone_heat_flux": "...",
+      "cone_sample_thickness": "...",
+      "pHRR": "...",
+      "THR": "...",
+      "pSPR": "...",
+      "TSP": "...",
+      "pCOR": "...",
+      "pCO2R": "...",
+      "residue_rate": "...",
+      "performance_notes": "..."
+    }
+  ]
+}

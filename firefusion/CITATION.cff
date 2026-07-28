@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this workflow, please cite the associated manuscript."
+title: "FireFusion: benchmark and Bayesian transfer for flame-retardant materials data"
+type: software
+authors:
+  - family-names: Zhao
+    given-names: Neyan
+version: 1.0.0
+date-released: 2026-07-21
+license: MIT

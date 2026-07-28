@@ -1,0 +1,30 @@
+[project]
+name = "ny-mlmaterials"
+version = "0.1.0"
+description = "Formulation-aware extraction of flame-retardant polymer data from scientific literature"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+  { name = "Neyan Zhao" },
+  { name = "Dichang Zhang" },
+  { name = "Jiaqi Deng" },
+  { name = "Bibo Wang" },
+  { name = "Yixin Hu" },
+]
+dependencies = [
+  "numpy>=1.26,<3",
+  "openpyxl>=3.1,<4",
+  "pandas>=2.1,<3",
+  "requests>=2.31,<3",
+  "scikit-learn>=1.4,<2",
+  "tqdm>=4.66,<5",
+]
+
+[project.urls]
+Repository = "https://github.com/zny315/ny_MLmaterials"
+Issues = "https://github.com/zny315/ny_MLmaterials/issues"
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests", "firefusion/tests"]

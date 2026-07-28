@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this software or dataset, cite the repository and the companion manuscript."
+title: "Extract Broadly, Calibrate Locally: Formulation-Aware Multi-Fidelity Learning for Flame-Retardant Polymers"
+type: software
+version: 0.2.0
+date-released: 2026-07-25
+license: MIT
+repository-code: "https://github.com/zny315/ny_MLmaterials"
+authors:
+  - family-names: Zhao
+    given-names: Neyan
+  - family-names: Zhang
+    given-names: Dichang
+  - family-names: Deng
+    given-names: Jiaqi
+  - family-names: Wang
+    given-names: Bibo
+  - family-names: Hu
+    given-names: Yixin
+preferred-citation:
+  type: article
+  title: "Extract Broadly, Calibrate Locally: Formulation-Aware Multi-Fidelity Learning for Flame-Retardant Polymers"
+  authors:
+    - family-names: Zhao
+      given-names: Neyan
+    - family-names: Zhang
+      given-names: Dichang
+    - family-names: Deng
+      given-names: Jiaqi
+    - family-names: Wang
+      given-names: Bibo
+    - family-names: Hu
+      given-names: Yixin
+  year: 2026

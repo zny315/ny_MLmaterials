@@ -1,0 +1,64 @@
+
+Extract sample-level flame-retardant, thermal, cone-calorimetry, and tensile performance data.
+This task is performance only. Do not extract formulation entities or entity parts.
+Use "#" for missing values. Numeric fields should contain numeric values when possible.
+Return valid JSON only.
+
+Use these field meanings at minimum:
+- samples: one row per tested sample.
+- sample_name: exact sample code or material name used in the paper.
+- LOI: limiting oxygen index.
+- UL94_rating: vertical burning rating encoded as V-0=0, V-1=1, V-2=2, NR/HB/no rating=3, or #.
+- elongation_at_break: tensile elongation at break.
+- tensile_strength: tensile strength.
+- T1, T5, T10, T50: temperatures at 1%, 5%, 10%, and 50% mass loss.
+- Tmax1, Tmax2: first and second maximum degradation-rate temperatures.
+- TGAresidue: char/residue from TGA.
+- TTI: time to ignition.
+- cone_heat_flux: heat flux used in cone calorimetry.
+- cone_sample_thickness: cone calorimetry sample thickness.
+- pHRR: peak heat release rate.
+- THR: total heat release.
+- pSPR: peak smoke production rate.
+- TSP: total smoke production.
+- pCOR: peak carbon monoxide production rate.
+- pCO2R: peak carbon dioxide production rate.
+- residue_rate: residue or char yield after cone calorimetry.
+- performance_notes: short source text for performance details.
+
+Output schema:
+{
+  "article_title": "paper title",
+  "DOI": "paper DOI",
+  "innovation": "#",
+  "ai_summary": "short paper-level summary",
+  "samples": [
+    {
+      "sample_name": "exact sample name",
+      "LOI": "...",
+      "UL94_rating": "V-0=0, V-1=1, V-2=2, NR/HB/no rating=3, or #",
+      "elongation_at_break": "...",
+      "tensile_strength": "...",
+      "T1": "...",
+      "T5": "...",
+      "T10": "...",
+      "T50": "...",
+      "Tmax1": "...",
+      "Tmax2": "...",
+      "TGAresidue": "...",
+      "TTI": "...",
+      "cone_heat_flux": "...",
+      "cone_sample_thickness": "...",
+      "pHRR": "...",
+      "THR": "...",
+      "pSPR": "...",
+      "TSP": "...",
+      "pCOR": "...",
+      "pCO2R": "...",
+      "residue_rate": "...",
+      "performance_notes": "..."
+    }
+  ]
+}
+
+Paper Content:
