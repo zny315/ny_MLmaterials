@@ -1,0 +1,101 @@
+{
+  "release_version": "gt50_publication_clean_v18",
+  "generated_at": "2026-07-27",
+  "selected_articles": 50,
+  "ground_truth": {
+    "path": "ground_truth/GT50_EVA_hierarchical_ground_truth_publication_clean.xlsx",
+    "sha256": "ccca70c54ec6ca3995eb0852aa829d5c740738678cfc755ed73cfef61082caca",
+    "sheets": {
+      "formulation_entities_GT": 2828,
+      "entity_parts_GT": 1134,
+      "performance_GT": 721,
+      "selected_articles": 50,
+      "data_dictionary": 54
+    },
+    "bytes": 300674,
+    "sheet_columns": {
+      "formulation_entities_GT": [
+        "article_index",
+        "sample_index_in_article",
+        "sample_name",
+        "article_title",
+        "DOI",
+        "entity_id",
+        "entity_name",
+        "entity_role",
+        "entity_type",
+        "entity_loading_wt_total_formulation",
+        "entity_loading_phr_resin",
+        "entity_grade"
+      ],
+      "entity_parts_GT": [
+        "article_index",
+        "sample_index_in_article",
+        "sample_name",
+        "article_title",
+        "DOI",
+        "entity_id",
+        "entity_name",
+        "part_name",
+        "part_role",
+        "part_relation",
+        "modification_method",
+        "part_ratio"
+      ],
+      "performance_GT": [
+        "article_index",
+        "sample_index_in_article",
+        "sample_name",
+        "article_title",
+        "DOI",
+        "LOI",
+        "UL94_rating",
+        "elongation_at_break",
+        "tensile_strength",
+        "T1",
+        "T5",
+        "T10",
+        "T50",
+        "Tmax1",
+        "Tmax2",
+        "TGA_residue",
+        "TTI",
+        "cone_heat_flux",
+        "cone_specimen_thickness",
+        "pHRR",
+        "THR",
+        "pSPR",
+        "TSP",
+        "pCOR",
+        "pCO2R",
+        "cone_residue"
+      ],
+      "selected_articles": [
+        "selection_order",
+        "article_index",
+        "article_title",
+        "DOI"
+      ],
+      "data_dictionary": [
+        "sheet",
+        "field",
+        "definition",
+        "evaluation_role",
+        "allowed_values_or_unit",
+        "note"
+      ]
+    }
+  },
+  "expected_metrics": {
+    "path": "expected_metrics.json",
+    "sha256": "c5806ef6a4e25b48d36cf54d1957aa9826d52971ecbe518a57752ebef4f6da91",
+    "metric_rows": 16,
+    "bytes": 4343
+  },
+  "extraction_methods": [
+    "direct_llm",
+    "expert_prompt_only",
+    "task_decomposition_only",
+    "full_pipeline"
+  ]
+}
